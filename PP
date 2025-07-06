@@ -1,0 +1,107 @@
+Privacy Policy for ISP Bill Manager
+
+Last updated: 6 July 2025
+
+Thank you for choosing to be part of our community at Sagor Ahamed ("Company", "we", "us", or "our"). We are committed to protecting your personal information and your right to privacy. If you have any questions or concerns about this privacy notice, or our practices with regard to your personal information, please contact us at appsdevsa.me@gmail.com.
+
+1  Scope
+
+This privacy policy applies to the ISP Bill Manager mobile application (the "App") published on Google Play. It explains what information we collect, why we collect it, how we use it, and the choices you have.
+
+2  Information We Collect
+
+Category
+
+Data
+
+How It Is Collected
+
+Stored Where
+
+Account data
+
+Username only
+
+You enter it during login
+
+Encrypted in Shared Preferences on your device
+
+Client & billing records
+
+Client name, address, service details, invoices, payments
+
+You enter or import it
+
+Local SQLite database on your device
+
+Expense records
+
+Title, amount, notes, date
+
+You enter it
+
+Local SQLite database on your device
+
+Settings
+
+Dark‑mode preference
+
+Automatically when you toggle it
+
+Shared Preferences
+
+We do not collect: email address, phone number, device location, contacts, photos, camera, microphone, advertising ID, or any biometric data.
+
+The App does not transmit your data to any remote server, cloud service, or third‑party API. All data remains on your own device unless you explicitly export or share it.
+
+3  How We Use Your Information
+
+We use the data solely to:
+
+Display dashboards, invoices, expenses, and other in‑app reports.
+
+Remember your last login session and theme preference.
+
+Generate client bills and staff salary records.
+
+We do not use your information for analytics, marketing, or advertising.
+
+4  Data Sharing & Disclosure
+
+We do not share, sell, rent, or trade any user information with third parties.
+
+5  Data Security
+
+The local SQLite database is stored in the App’s sandboxed internal storage, inaccessible to other apps.
+
+Shared Preferences values are stored using the Android KeyStore encryption facility where available.
+
+We use best‑practice safeguards to protect your data from unauthorised access.
+
+However, please remember that no mobile platform can guarantee 100 % security. You are responsible for maintaining backup copies if desired.
+
+6  Your Choices & Rights
+
+Delete data: You may uninstall the App at any time; this will delete all locally‑stored data.
+
+Export data: We plan to add an export feature in a future update.
+
+Revoke consent: Stop using the App and uninstall it.
+
+Because the App stores data only on your device, we cannot access or remove it for you.
+
+7  Children’s Privacy
+
+The App is intended for users aged 18 and older. We do not knowingly collect data from children under 13.
+
+8  Changes to This Policy
+
+We may update this privacy policy from time to time. We will post the new version in‑app and update the "Last updated" date. Continued use of the App after any revision constitutes acceptance of the new policy.
+
+9  Contact
+
+If you have questions about this policy, email us at:
+
+Sagor AhamedEmail: appsdevsa.me@gmail.com
+
+© 2025 Sagor Ahamed. All rights reserved.
