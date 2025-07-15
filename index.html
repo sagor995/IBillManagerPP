@@ -1,72 +1,89 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Privacy Policy – ISP Bill Manager</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Privacy Policy – iBillManager</title>
   <style>
-    body{font-family:Arial,Helvetica,sans-serif;margin:0;padding:2rem;line-height:1.6;background:#fafafa;color:#222}
-    h1,h2{color:#1a237e} h1{font-size:2rem;margin-bottom:0.5rem} h2{margin-top:2rem;font-size:1.2rem}
-    table{width:100%;border-collapse:collapse;margin:1rem 0}
-    th,td{border:1px solid #ddd;padding:8px;text-align:left}
-    th{background:#e8eaf6}
-    a{color:#1a73e8;text-decoration:none}
-    hr{border:none;border-top:1px solid #ddd;margin:2rem 0}
+    body { font-family: Arial, Helvetica, sans-serif; margin: 0; padding: 2rem; line-height: 1.6; background: #fafafa; color: #222; }
+    h1, h2 { color: #1a237e; }
+    h1 { font-size: 2rem; margin-bottom: 0.5rem; }
+    h2 { margin-top: 2rem; font-size: 1.2rem; }
+    table { width: 100%; border-collapse: collapse; margin: 1rem 0; }
+    th, td { border: 1px solid #ddd; padding: 8px; text-align: left; }
+    th { background: #e8eaf6; }
+    a { color: #1a73e8; text-decoration: none; }
+    hr { border: none; border-top: 1px solid #ddd; margin: 2rem 0; }
   </style>
 </head>
 <body>
-  <h1>Privacy Policy for ISP Bill Manager</h1>
-  <p><em>Last updated: 6 July 2025</em></p>
-  <p>Thank you for choosing to be part of our community at <strong>Sagor Ahamed</strong> ("<strong>Company</strong>", "<strong>we</strong>", "<strong>us</strong>", or "<strong>our</strong>"). We are committed to protecting your personal information and your right to privacy. If you have any questions or concerns about this privacy notice, or our practices with regard to your personal information, please contact us at <strong><a href="mailto:appsdevsa.me@gmail.com">appsdevsa.me@gmail.com</a></strong>.</p>
+  <h1>Privacy Policy for iBillManager</h1>
+  <p><em>Last updated: 15 July 2025</em></p>
+  <p>Thank you for choosing to be part of our community at <strong>Sagor Ahamed</strong> ("<strong>Company</strong>", "<strong>we</strong>", "<strong>us</strong>", or "<strong>our</strong>"). We are committed to protecting your personal information and your right to privacy. For any questions or concerns, email <strong><a href="mailto:appsdevsa.me@gmail.com">appsdevsa.me@gmail.com</a></strong>.</p>
+
   <hr>
-  <h2>1&nbsp;&nbsp;Scope</h2>
-  <p>This privacy policy applies to the <strong>ISP Bill Manager</strong> mobile application (the "<strong>App</strong>") published on Google Play. It explains what information we collect, why we collect it, how we use it, and the choices you have.</p>
-  <h2>2&nbsp;&nbsp;Information We Collect</h2>
+  <h2>1. Scope</h2>
+  <p>This privacy policy applies to the <strong>iBillManager</strong> mobile application (the "<strong>App</strong>") published on Google Play. It explains what information we collect, how we use it, and the choices you have.</p>
+
+  <h2>2. Information We Collect</h2>
   <table>
     <thead>
       <tr><th>Category</th><th>Data</th><th>How It Is Collected</th><th>Stored Where</th></tr>
     </thead>
     <tbody>
-      <tr><td><strong>Account data</strong></td><td>Username only</td><td>You enter it during login</td><td>Encrypted in Shared Preferences on your device</td></tr>
-      <tr><td><strong>Client &amp; billing records</strong></td><td>Client name, address, service details, invoices, payments</td><td>You enter or import it</td><td>Local SQLite database on your device</td></tr>
-      <tr><td><strong>Expense records</strong></td><td>Title, amount, notes, date</td><td>You enter it</td><td>Local SQLite database on your device</td></tr>
-      <tr><td><strong>Settings</strong></td><td>Dark‑mode preference</td><td>Automatically when you toggle it</td><td>Shared Preferences</td></tr>
+      <tr><td><strong>Authentication</strong></td><td>Google UID, name</td><td>Google Sign-In</td><td>Used to create separate local DB per user</td></tr>
+      <tr><td><strong>Client & billing</strong></td><td>Client name, address, invoices, payments, notes</td><td>You enter it</td><td>Local SQLite DB per user</td></tr>
+      <tr><td><strong>Staff</strong></td><td>Name, salary, contact, photo (optional)</td><td>You enter it</td><td>Local SQLite DB per user</td></tr>
+      <tr><td><strong>Staff salary</strong></td><td>Amount, paid date, notes</td><td>You enter it</td><td>Local SQLite DB per user</td></tr>
+      <tr><td><strong>Expenses</strong></td><td>Title, amount, date, notes</td><td>You enter it</td><td>Local SQLite DB per user</td></tr>
+      <tr><td><strong>Settings</strong></td><td>Dark mode, quiz timer, etc.</td><td>Set by user in-app</td><td>Stored in Shared Preferences</td></tr>
     </tbody>
   </table>
-  <p><strong>We do not collect:</strong> email address, phone number, device location, contacts, photos, camera, microphone, advertising ID, or any biometric data.</p>
-  <p>The App does <strong>not</strong> transmit your data to any remote server, cloud service, or third‑party API. All data remains on your own device unless you explicitly export or share it.</p>
-  <h2>3&nbsp;&nbsp;How We Use Your Information</h2>
+
+  <p><strong>We do NOT collect:</strong> email addresses, phone numbers, location, contacts, camera/mic data, advertising ID, or biometric data.</p>
+  <p>The app operates entirely offline. It does <strong>not</strong> transmit or sync any data to cloud servers, external APIs, or remote storage. All data is stored locally and tied to your Google account UID.</p>
+
+  <h2>3. How We Use Your Information</h2>
   <ul>
-    <li>Display dashboards, invoices, expenses, and other in‑app reports.</li>
-    <li>Remember your last login session and theme preference.</li>
-    <li>Generate client bills and staff salary records.</li>
+    <li>Manage clients, bills, and expense records.</li>
+    <li>Manage staff and staff salary payments.</li>
+    <li>Display reports and dashboards (offline).</li>
+    <li>Store dark/light mode and timer preferences.</li>
+    <li>Support per-user data isolation using Google UID.</li>
   </ul>
-  <p>We do <strong>not</strong> use your information for analytics, marketing, or advertising.</p>
-  <h2>4&nbsp;&nbsp;Data Sharing &amp; Disclosure</h2>
-  <p>We do <strong>not</strong> share, sell, rent, or trade any user information with third parties.</p>
-  <h2>5&nbsp;&nbsp;Data Security</h2>
+  <p>We do <strong>not</strong> use your data for analytics, marketing, or ads.</p>
+
+  <h2>4. Data Sharing & Disclosure</h2>
+  <p>We do <strong>not</strong> share, rent, sell, or trade any user information. All data remains private and only accessible within your device.</p>
+
+  <h2>5. Data Security</h2>
   <ul>
-    <li>The local SQLite database is stored in the App’s sandboxed internal storage, inaccessible to other apps.</li>
-    <li>Shared Preferences values are stored using the Android KeyStore encryption facility where available.</li>
-    <li>We use best‑practice safeguards to protect your data from unauthorised access.</li>
+    <li>Each user’s data is isolated in a UID-named database.</li>
+    <li>Data is stored in secure internal app storage.</li>
+    <li>Preferences are stored using Android’s Shared Preferences (encrypted where supported).</li>
+    <li>We follow platform guidelines to prevent unauthorized access.</li>
   </ul>
-  <p>However, please remember that no mobile platform can guarantee 100 % security. You are responsible for maintaining backup copies if desired.</p>
-  <h2>6&nbsp;&nbsp;Your Choices &amp; Rights</h2>
+  <p>However, we recommend users regularly back up their data, as we do not store it remotely and cannot recover lost information.</p>
+
+  <h2>6. Your Choices & Rights</h2>
   <ul>
-    <li><strong>Delete data:</strong> You may uninstall the App at any time; this will delete all locally‑stored data.</li>
-    <li><strong>Export data:</strong> We plan to add an export feature in a future update.</li>
-    <li><strong>Revoke consent:</strong> Stop using the App and uninstall it.</li>
+    <li><strong>Delete data:</strong> Uninstalling the app deletes all local data.</li>
+    <li><strong>Soft delete:</strong> You can deactivate clients, bills, or staff and restore them later.</li>
+    <li><strong>Export data:</strong> Feature is planned in future updates.</li>
+    <li><strong>Revoke consent:</strong> Stop using the app and uninstall it.</li>
   </ul>
-  <p>Because the App stores data only on your device, we cannot access or remove it for you.</p>
-  <h2>7&nbsp;&nbsp;Children’s Privacy</h2>
-  <p>The App is intended for users aged <strong>18 and older</strong>. We do not knowingly collect data from children under 13.</p>
-  <h2>8&nbsp;&nbsp;Changes to This Policy</h2>
-  <p>We may update this privacy policy from time to time. We will post the new version in‑app and update the "Last updated" date. Continued use of the App after any revision constitutes acceptance of the new policy.</p>
-  <h2>9&nbsp;&nbsp;Contact</h2>
-  <p>If you have questions about this policy, email us at:</p>
-  <p><strong>Sagor Ahamed</strong><br>
-  Email: <a href="mailto:appsdevsa.me@gmail.com">appsdevsa.me@gmail.com</a></p>
+  <p>We cannot access or modify your data because everything is stored locally on your device.</p>
+
+  <h2>7. Children’s Privacy</h2>
+  <p>The app is intended for users aged <strong>18 and above</strong>. We do not knowingly collect information from children under 13.</p>
+
+  <h2>8. Changes to This Policy</h2>
+  <p>We may revise this policy as features evolve. We'll update this page with the new version and date. Continued use of the app implies acceptance of the updated policy.</p>
+
+  <h2>9. Contact</h2>
+  <p><strong>Sagor Ahamed</strong><br>Email: <a href="mailto:appsdevsa.me@gmail.com">appsdevsa.me@gmail.com</a></p>
+
   <hr>
-  <p style="text-align:center">© 2025 Sagor Ahamed. All rights reserved.</p>
+  <p style="text-align: center;">© 2025 Sagor Ahamed. All rights reserved.</p>
 </body>
 </html>
